@@ -7,6 +7,7 @@ include 'main_menu.php';
         <div class="container_fluid">
 <div class="container_fluid">
     <!-- <h1 class="well">Search Student </h1> -->
+  
     <p class="page-header"> 
     <strong>Report a Bug or Call us</strong><br>
 
@@ -15,37 +16,49 @@ include 'main_menu.php';
            improve student’s performances and increase the efficiency of teachers.
  </p>
  <div class="container_fluid">
-<div class="form-sec">
-  <h4>Contact form</h4>
-  
- <form name="qryform" id="qryform" method="post" action="#" onsubmit="return(validate());" novalidate="novalidate">
-    <div class="form-group">
-      <label>Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-    </div>
-    <div class="form-group">
-      <label>Email:</label>
-      <input type="email" class="form-control" id="name" placeholder="Enter Email" name="email">
-    </div>
+	<div class="row">
+      <div class="col-md-6 col-md-offset">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Contact us</legend>
     
-    <div class="form-group">
-      <label>Phone No.:</label>
-      <input type="text" class="form-control" id="phone" placeholder="Enter Phone no." name="phone">
-    </div>
-	<div class="form-group">
-      <label>Subject:</label>
-      <input type="text" class="form-control" id="name" placeholder="Subject" name="subject">
-    </div>
-	 
-	<div class="form-group">
-      <label>Issues/query:</label>
-      <textarea name="issues" class="form-control" id="iq" placeholder="Enter your Issues/query"></textarea>
-    </div>
-	
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
     
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-  </div>
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
 
 
 </div>
