@@ -8,10 +8,10 @@ include 'main_menu.php';
 <div class="container_fluid">
     <!-- <h1 class="well">Reservation Form</h1> -->
     <p class="page-header"> 
-          <strong>Register New Student</strong><br>
-          The easiest solution to take your school to the next level My Smart School is the easiest and 
-          complete system to manage the school better, make communication effortless and effective,
-           improve student’s performances and increase the efficiency of teachers.
+		<div class='alert alert-success text-center'>
+ <strong>Success Message!</strong> New Student Account has been created with email confirmation
+</div>
+
  </p>
 	<div class="col-lg-6 well">
 	<div class="row">
@@ -49,7 +49,7 @@ include 'main_menu.php';
 						<div class="row">
 							<div class="col-sm-6 form-group">
 								<label>Guadian Name</label>
-								<input type="text" placeholder="Enter Guadian Name Here.." name="gname" class="form-control" required>
+								<input type="text" placeholder="Enter Guadian Name Here.." name="gname" class="form-control" required> 
 							</div>		
 							<div class="col-sm-6 form-group">
 								<label>Guadian Last Name</label>
@@ -58,7 +58,7 @@ include 'main_menu.php';
 						</div>						
 					<div class="form-group">
 						<label>Guadian Phone</label>
-						<input type="text" placeholder="Enter Phone Number Here.." name="gphone" class="form-control" required >
+						<input type="text" placeholder="Enter Phone Number Here.." name="gphone" class="form-control" required>
 					</div>		
 					<div class="form-group">
 						<label>Email Address</label>

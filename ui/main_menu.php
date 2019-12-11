@@ -22,7 +22,6 @@ body {
   padding-top: 50px;
 }
 
-
 /*
  * Global add-ons
  */
