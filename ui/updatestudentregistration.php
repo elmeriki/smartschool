@@ -1,15 +1,14 @@
+
 <?php
 include 'main_menu.php';
-
 ?>
      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
         <div class="container_fluid">
 <div class="container_fluid">
-		<!-- <h1 class="well">Update Registration</h1> -->
-		<p class="page-header"> 
-		<strong>Update  Student Account</strong><br>
-
+    <!-- <h1 class="well">Reservation Form</h1> -->
+    <p class="page-header"> 
+          <strong>Update Student Account</strong><br>
           The easiest solution to take your school to the next level My Smart School is the easiest and 
           complete system to manage the school better, make communication effortless and effective,
            improve student’s performances and increase the efficiency of teachers.
@@ -34,30 +33,30 @@ include 'main_menu.php';
 						</div>	
 						<div class="row">
 							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control">
+								<label>Phone</label>
+								<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control">
+								<label>Email</label>
+								<input type="email" placeholder="Enter Email Address Here.." class="form-control">
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>Zip</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+								<label>Course Name</label>
+								<input type="text" placeholder="Enter Course Name Here.." class="form-control">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>Title</label>
-								<input type="text" placeholder="Enter Designation Here.." class="form-control">
+								<label>Guadian Name</label>
+								<input type="text" placeholder="Enter Guadian Name Here.." class="form-control">
 							</div>		
 							<div class="col-sm-6 form-group">
-								<label>Company</label>
-								<input type="text" placeholder="Enter Company Name Here.." class="form-control">
+								<label>Guadian Last Name</label>
+								<input type="text" placeholder="Enter Guadian Address Here.." class="form-control">
 							</div>	
 						</div>						
 					<div class="form-group">
-						<label>Phone Number</label>
+						<label>Guadian Phone</label>
 						<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
 					</div>		
 					<div class="form-group">
@@ -65,10 +64,10 @@ include 'main_menu.php';
 						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
 					</div>	
 					<div class="form-group">
-						<label>Student ID/Number</label>
+						<label>Guadian Address</label>
 						<input type="text" placeholder="Enter Website Name Here.." class="form-control">
 					</div>
-					<button type="button" class="btn btn-lg btn-info">Update</button>					
+					<button type="submit" class="btn btn-lg btn-info">Update</button>					
 					</div>
 				</form> 
 				</div>

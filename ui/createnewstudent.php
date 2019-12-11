@@ -33,30 +33,30 @@ include 'main_menu.php';
 						</div>	
 						<div class="row">
 							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control">
+								<label>Phone</label>
+								<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control">
+								<label>Email</label>
+								<input type="email" placeholder="Enter Email Address Here.." class="form-control">
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>Zip</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+								<label>Course Name</label>
+								<input type="text" placeholder="Enter Course Name Here.." class="form-control">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>Title</label>
-								<input type="text" placeholder="Enter Designation Here.." class="form-control">
+								<label>Guadian Name</label>
+								<input type="text" placeholder="Enter Guadian Name Here.." class="form-control">
 							</div>		
 							<div class="col-sm-6 form-group">
-								<label>Company</label>
-								<input type="text" placeholder="Enter Company Name Here.." class="form-control">
+								<label>Guadian Last Name</label>
+								<input type="text" placeholder="Enter Guadian Address Here.." class="form-control">
 							</div>	
 						</div>						
 					<div class="form-group">
-						<label>Phone Number</label>
+						<label>Guadian Phone</label>
 						<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
 					</div>		
 					<div class="form-group">
@@ -64,10 +64,10 @@ include 'main_menu.php';
 						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
 					</div>	
 					<div class="form-group">
-						<label>Website</label>
+						<label>Guadian Address</label>
 						<input type="text" placeholder="Enter Website Name Here.." class="form-control">
 					</div>
-					<button type="button" class="btn btn-lg btn-info">Send</button>					
+					<button type="submit" class="btn btn-lg btn-info">Send</button>					
 					</div>
 				</form> 
 				</div>

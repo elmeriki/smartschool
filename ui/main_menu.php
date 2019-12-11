@@ -137,8 +137,9 @@ body {
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="payment.php">Payment</a></li>
-            <li><a href="sendmessage.php">Make Comment</a></li>
-            <li><a href="reporterrors.php">Report System Errrors</a></li>
+            <li><a href="feed.php">Feed</a></li>
+            <li><a href="reporterrors.php">Contact</a></li>
+            <li><a href="searchpayment.php">Search Payment</a></li>
             <li><a href="../controller/logoutcontroller.php">Logout</a></li>
           </ul>
           <form class="navbar-form navbar-right">
@@ -168,7 +169,7 @@ body {
           <ul class="nav nav-sidebar">
             <li><a class="list-group-item list-group-item-action" href="fetchallstudent.php">FetchAll Student</a></li>
             <li><a class="list-group-item list-group-item-action"href="fetchallstaff.php">FetchAll Teachers</a></li>
-            <li><a class="list-group-item list-group-item-action" href="">Downlaod Center</a></li>
+            <li><a class="list-group-item list-group-item-action" href="feed.php">Student Feed</a></li>
           </ul>
        
 
