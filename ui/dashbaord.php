@@ -10,22 +10,22 @@ include 'main_menu.php';
  </p>
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="../images/iconimages.png" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="../images/1.jpg" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>STUDENT</h4>
               <span class="text-muted">90</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="../images/iconimages.png" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="../images/2.jpg" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>TEACHERS</h4>
               <span class="text-muted">80</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="../images/iconimages.png" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="../images/1.jpg" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>PRINCIPAL</h4>
               <span class="text-muted">08</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="../images/iconimages.png" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="../images/1.jpg" width="100" height="100" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>PARENT</h4>
               <span class="text-muted">5</span>
             </div>

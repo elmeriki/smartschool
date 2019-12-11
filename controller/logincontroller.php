@@ -1,8 +1,10 @@
 <?php
-   include("../model/dbconfig.php");
+  session_start();
+  include("../model/dbconfig.php");
+  include '../ui/boostrap.php'
+?>
 
-   session_start();
-   
+<?php 
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
@@ -10,7 +12,8 @@
       $sql = "SELECT id FROM admin_table WHERE username = '$myusername' and passcode ='$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
+
+     // $active = $row['active'];
       
       $count = mysqli_num_rows($result);
       
@@ -18,17 +21,19 @@
 
       if($count == 1) {
 
-         $_SESSION['myusername'];
+         //$_SESSION['myusername'];
          $_SESSION['login_user'] = $myusername;
-         
-    header("location: ../ui/dashbaord.php");
-
-      }else {
-
- echo  "<script> alert('Your Login Name or Password is invalid')</script>"
- .header("Location:../index.php");
- ;
   
+ echo "<div class='alert alert-success text-center'>
+ <strong>Success Message!</strong> You have sucessfully login Please wait..........
+</div>";   
+echo "<center> <div class='spinner-border'></div></center>".header("refresh:5 ../ui/dashbaord.php");
+
+      }else{
+
+echo  header("Location:../relogin.php");
+
+
       }
    }
 ?>

@@ -15,7 +15,9 @@
   <div class="row">
 
     <div class="main">
-      <h3>Please Log In, or <a href="#">Sign Up</a></h3>
+    <div class="alert alert-success">
+  <strong>Success Message! </strong> Your logout sucessfully.
+</div>
       <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6">
           <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>

@@ -1,7 +1,6 @@
 <?php
 include '../controller/sessioncontroller.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,11 +15,6 @@ include '../controller/sessioncontroller.php';
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="../images/faviclogo.png" rel="shortcut icon" />
     <title>My School App | Dashboard </title>
-    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="dashboard.css" rel="stylesheet">
-    <link href="../images/faviclogo.png" rel="shortcut icon" />
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 </head>
   <style>
 
@@ -160,7 +154,7 @@ body {
             <li><a class="list-group-item list-group-item-action" href="dashbaord.php">Dasbaord</a></li>
             <li><a class="list-group-item list-group-item-action" href="createnewstudent.php">Register New Student</a></li>
             <li><a class="list-group-item list-group-item-action" href="updatestudentregistration.php">Update Student Profile</a></li>
-            <li><a class="list-group-item list-group-item-action"ref="deleteaccount.php">Delete Student Profile</a></li>
+            <li><a class="list-group-item list-group-item-action" href="deleteaccount.php">Delete Student Profile</a></li>
             <li><a class="list-group-item list-group-item-action" href="searchstudent.php">Search Student Profile</a></li>
 <hr>
           </ul>
