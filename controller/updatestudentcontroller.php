@@ -4,6 +4,7 @@
 ?>
 
 <?php
+    $studentid = $_POST['studentid'];
     $studentname = $_POST['studentname'];
     $studentlastname = $_POST['studentlastname'];
     $studentaddress = $_POST['studentaddress']; 
@@ -18,10 +19,12 @@
 
 
     if(count($_POST)> 0) {
-        mysqli_query($db,"UPDATE student_table set userid='" . $_POST['userid'] . "', first_name='" . $_POST['first_name'] . "', last_name='" . $_POST['last_name'] . "', city_name='" . $_POST['city_name'] . "' ,email='" . $_POST['email'] . "' WHERE userid='" . $_POST['userid'] . "'");
-        $message = "Record Modified Successfully";
-     }
+        mysqli_query($db,"UPDATE student_table set studentname='$studentname', 
+        studentlastname='$studentlastname',studentaddress='$studentaddress', studentphone='$studentphone'
+        ,studentemail='$studentemail',coursename='$coursename',guadianname='$gname',guadianlastname='$glastname',
+         guadianphone='$gphone',guadianemail='$gemail',gaddress='$gaddress' WHERE id='$studentid' or studentemail='$studentemail' ");
 
+     }
    
     if (mysqli_query($db, $sqlinsert)) {
 

@@ -8,66 +8,71 @@ include 'main_menu.php';
 <div class="container_fluid">
     <!-- <h1 class="well">Reservation Form</h1> -->
     <p class="page-header"> 
-          <strong>Update Student Account</strong><br>
+          <strong>Update New Student</strong><br>
           The easiest solution to take your school to the next level My Smart School is the easiest and 
           complete system to manage the school better, make communication effortless and effective,
            improve student’s performances and increase the efficiency of teachers.
  </p>
 	<div class="col-lg-6 well">
 	<div class="row">
-				<form>
+				<form action="#"  method="POST">
+
 					<div class="col-sm-12">
 						<div class="row">
+						<div class="col-sm-6 form-group">
+								<label>Enter Student Number *** </label>
+								<input type="text" placeholder="Enter the correct Student Number" name="studentid" class="form-control" required autocomplete="OFF" >
+							</div>	
 							<div class="col-sm-6 form-group">
 								<label>First Name</label>
-								<input type="text" placeholder="Enter First Name Here.." class="form-control">
+								<input type="text" placeholder="Enter First Name Here.." name="studentname" class="form-control" >
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Last Name</label>
-								<input type="text" placeholder="Enter Last Name Here.." class="form-control">
+								<input type="text" placeholder="Enter Last Name Here.." name="studentlastname" class="form-control" >
 							</div>
 						</div>					
 						<div class="form-group">
 							<label>Address</label>
-							<textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+							<textarea placeholder="Enter Address Here.." rows="3" name="studentaddress" class="form-control" ></textarea>
 						</div>	
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>Phone</label>
-								<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
+								<input type="text" placeholder="Enter Phone Number Here.." name="studentphone" class="form-control" >
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>Email</label>
-								<input type="email" placeholder="Enter Email Address Here.." class="form-control">
+								<label>Email ***</label>
+								<input type="email" placeholder="Enter Email Address Here.." name="studentemail" class="form-control" required>
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Course Name</label>
-								<input type="text" placeholder="Enter Course Name Here.." class="form-control">
+								<input type="text" placeholder="Enter Course Name Here.." name="coursename" class="form-control" >
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-6 form-group">
 								<label>Guadian Name</label>
-								<input type="text" placeholder="Enter Guadian Name Here.." class="form-control">
+								<input type="text" placeholder="Enter Guadian Name Here.." name="gname" class="form-control" >
 							</div>		
 							<div class="col-sm-6 form-group">
 								<label>Guadian Last Name</label>
-								<input type="text" placeholder="Enter Guadian Address Here.." class="form-control">
+								<input type="text" placeholder="Enter Guadian Address Here.." name="glastname" class="form-control" >
 							</div>	
 						</div>						
 					<div class="form-group">
 						<label>Guadian Phone</label>
-						<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
+						<input type="text" placeholder="Enter Phone Number Here.." name="gphone" class="form-control"  >
 					</div>		
 					<div class="form-group">
 						<label>Email Address</label>
-						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
+						<input type="text" placeholder="Enter Email Address Here.." name="gemail" class="form-control" >
 					</div>	
 					<div class="form-group">
 						<label>Guadian Address</label>
-						<input type="text" placeholder="Enter Website Name Here.." class="form-control">
+						<input type="text" placeholder="Enter Website Name Here.." name="gaddress" class="form-control" >
 					</div>
-					<button type="submit" class="btn btn-lg btn-info">Update</button>					
+					<button type="submit" class="btn btn-lg btn-info">Update now</button>					
 					</div>
 				</form> 
 				</div>
