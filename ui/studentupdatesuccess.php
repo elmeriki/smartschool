@@ -8,11 +8,9 @@ include 'main_menu.php';
 <div class="container_fluid">
     <!-- <h1 class="well">Reservation Form</h1> -->
     <p class="page-header"> 
-          <strong> Update New Student</strong><br>
-          The easiest solution to take your school to the next level My Smart School is the easiest and 
-          complete system to manage the school better, make communication effortless and effective,
-           improve student’s performances and increase the efficiency of teachers.
- </p>
+    <div class='alert alert-success text-center'>
+ <strong>Success Message!</strong> Student Account has been updated successfully
+</div>
 	<div class="col-lg-6 well">
 	<div class="row">
 				<form action="../controller/updatestudentcontroller.php"  method="POST">
@@ -21,11 +19,11 @@ include 'main_menu.php';
 						<div class="row">
 						<div class="col-sm-6 form-group">
 								<label>Enter Student Number *** </label>
-								<input type="text" placeholder="Enter the correct Student Number" name="studentid" class="form-control" required autocomplete="OFF" required autocomplete="OFF" >
+								<input type="text" placeholder="Enter the correct Student Number" name="studentid" class="form-control" required autocomplete="OFF" >
 							</div>	
 							<div class="col-sm-6 form-group">
 								<label>First Name</label>
-								<input type="text" placeholder="Enter First Name Here.." name="studentname" class="form-control" required autocomplete="OFF" required>
+								<input type="text" placeholder="Enter First Name Here.." name="studentname" class="form-control" required autocomplete="OFF" required >
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Last Name</label>
@@ -39,7 +37,7 @@ include 'main_menu.php';
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Email ***</label>
-								<input type="email" placeholder="Enter Email Address Here.." name="studentemail" class="form-control"  required autocomplete="OFF" required>
+								<input type="email" placeholder="Enter Email Address Here.." name="studentemail" class="form-control" required autocomplete="OFF" required>
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Course Name</label>

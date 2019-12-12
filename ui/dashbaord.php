@@ -18,12 +18,12 @@ include 'main_menu.php';
 							<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#">
-							ADMIN
+							ADMIN (Williams)
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="http://www.sciax2.it/forum/utenti/-kik_226760/" target="_blank">Return back</a></li>
+							<li><a href="#" target="_blank">Return back</a></li>
 							<li class="dropdown ">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 									Settings
@@ -48,14 +48,14 @@ include 'main_menu.php';
 							<div class="panel-heading">
 							  <h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-								Files</a>
+								Registration stat</a>
 							  </h4>
 							</div>
 							<div id="collapse1" class="panel-collapse collapse in">
 								<ul class="list-group">
-									<li class="list-group-item"><span class="badge">253</span> New</li>
-									<li class="list-group-item"><span class="badge">17</span> Deleted</li>
-									<li class="list-group-item"><span class="badge">3</span> Reported</li>
+									<li class="list-group-item"><span class="badge">253</span> New Student</li>
+									<li class="list-group-item"><span class="badge">17</span> Fees pending</li>
+									<li class="list-group-item"><span class="badge">3</span> Anouncement</li>
 								</ul>
 							</div>
 						  </div>
@@ -129,84 +129,51 @@ include 'main_menu.php';
 					</div>
 				</div>
 
-          <h2 class="sub-header">Register Student</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Student ID</th>
-                  <th>Surname</th>
-                  <th>Names</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
+				<?php
+
+$fetchalldata = mysqli_query($db,"SELECT id,studentname,studentlastname,studentemail,coursename FROM student_table");
+
+if (mysqli_num_rows($fetchalldata ) > 0) {
+
+?>
+
+  <h2 class="sub-header">Register Student</h2>
+    <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+		<tr>
+    <th>Student Number</th>
+    <th>Student First Name</th>
+    <th>Student Last Name</th>
+		<th>Student Email</th>
+		<th>Student Course</th>
+
+  </tr>
+	
+	<?php
+$i=0;
+while($row = mysqli_fetch_array($fetchalldata)) {
+?>
+
+<tr>
+    <td><?php echo $row["id"]; ?></td>
+    <td><?php echo $row["studentname"]; ?></td>
+    <td><?php echo $row["studentlastname"]; ?></td>
+		<td><?php echo $row["studentemail"]; ?></td>
+		<td><?php echo $row["coursename"]; ?></td>
+	
 </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
+<?php
+$i++;
+}
+?>      
+						</table>
+						<?php
+}
+else{
+    echo "No result found";
+}
+?>				
+						
             <hr>
 <center>
 <p> 

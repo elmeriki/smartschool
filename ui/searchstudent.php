@@ -16,19 +16,14 @@ include 'main_menu.php';
  </p>
 	<div class="col-lg-6 well">
 	<div class="row">
-				<form action="studentdisplay.php">
+				<form action="studentdisplay.php" method="POST">
 					<div class="col-sm-12">
 				
 						</div>						
 					<div class="form-group">
 						<label>Student ID/Number</label>
-						<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
+						<input type="text" placeholder="Enter Student Number Here.." name="studentnumber" class="form-control" required>
 					</div>		
-					<div class="form-group">
-						<label>First Name/Last Name</label>
-						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
-					</div>	
-				
 					<button type="submit" class="btn btn-lg btn-info">Search</button>					
 					</div>
 				</form> 
