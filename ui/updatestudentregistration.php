@@ -15,7 +15,7 @@ include 'main_menu.php';
  </p>
 	<div class="col-lg-6 well">
 	<div class="row">
-				<form action="#"  method="POST">
+				<form action="../controller/updatestudentcontroller.php"  method="POST">
 
 					<div class="col-sm-12">
 						<div class="row">

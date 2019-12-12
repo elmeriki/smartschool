@@ -8,12 +8,9 @@ include 'main_menu.php';
 <div class="container_fluid">
     <!-- <h1 class="well">Delete Registration </h1> -->
     <p class="page-header"> 
-    <strong>Deelete  Student</strong><br>
-
-          The easiest solution to take your school to the next level My Smart School is the easiest and 
-          complete system to manage the school better, make communication effortless and effective,
-           improve student’s performances and increase the efficiency of teachers.
- </p>
+    <div class='alert alert-success text-center'>
+ <strong>Success Message!</strong> Student Account has been deleted with email confirmation
+</div>
 	<div class="col-lg-6 well">
 	<div class="row">
 				<form action="../controller/deletecontroller.php" method="POST">
@@ -24,7 +21,7 @@ include 'main_menu.php';
 					<div class="form-group">
 						<label>Student ID/Number</label>
 						<input type="text" placeholder="Enter Phone Number Here.." name="studentid" class="form-control" required>
-					</div>			
+					</div>		
 					<button type="submit" class="btn btn-lg btn-info">Delete</button>					
 					</div>
 				</form> 
