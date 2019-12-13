@@ -128,13 +128,16 @@ include 'main_menu.php';
 						</div>
 					</div>
 				</div>
-
-				<?php
-
-$fetchalldata = mysqli_query($db,"SELECT id,studentname,studentlastname,studentemail,coursename FROM student_table");
-
-if (mysqli_num_rows($fetchalldata ) > 0) {
-
+<?php
+$limit =3;  
+if (isset($_GET["page"])) {
+	$page  = $_GET["page"]; 
+	} 
+	else{ 
+	$page=1;
+	};  
+$start_from = ($page-1) * $limit;  
+$result = mysqli_query($db,"SELECT id,studentname,studentlastname,studentemail,coursename FROM student_table ORDER BY id ASC LIMIT $start_from, $limit");
 ?>
 
   <h2 class="sub-header">Register Student</h2>
@@ -149,10 +152,9 @@ if (mysqli_num_rows($fetchalldata ) > 0) {
 
   </tr>
 	
-	<?php
-$i=0;
-while($row = mysqli_fetch_array($fetchalldata)) {
-?>
+  <?php  
+while ($row = mysqli_fetch_array($result)) {  
+?>  
 
 <tr>
     <td><?php echo $row["id"]; ?></td>
@@ -162,18 +164,24 @@ while($row = mysqli_fetch_array($fetchalldata)) {
 		<td><?php echo $row["coursename"]; ?></td>
 	
 </tr>
-<?php
-$i++;
-}
-?>      
+<?php  
+};  
+?>     
 						</table>
-						<?php
+
+                        <?php  
+
+$result_db = mysqli_query($db,"SELECT COUNT(id) FROM student_table"); 
+$row_db = mysqli_fetch_row($result_db);  
+$total_records = $row_db[0];  
+$total_pages = ceil($total_records / $limit); 
+/* echo  $total_pages; */
+$pagLink = "<ul class='pagination'>";  
+for ($i=1; $i<=$total_pages; $i++) {
+              $pagLink .= "<li class='page-item'><a class='page-link' href='paginationpage.php?page=".$i."'>".$i."</a></li>";	
 }
-else{
-    echo "No result found";
-}
-?>				
-						
+echo $pagLink . "</ul>";  
+?>					
             <hr>
 <center>
 <p> 
