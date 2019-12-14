@@ -10,9 +10,9 @@ include '../controller/sessioncontroller.php';
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="boostrap/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+    <script src="boostrap/bootstrap.js"></script>
+    <script src="boostrap/jquery.js"></script>
     <link href="../images/faviclogo.png" rel="shortcut icon" />
     <title>My School App | Dashboard </title>
 </head>

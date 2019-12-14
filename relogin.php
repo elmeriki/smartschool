@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="ui/boostrap/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+    <script src="ui/boostrap/bootstrap.js"></script>
+     <script src="ui/boostrap/jquery.js"></script>
      <link href="images/faviclogo.png" rel="shortcut icon" />
     <title>MySchool App | Login </title>
 </head>
@@ -31,25 +31,8 @@
         <span class="span-or">or</span>
       </div>
 
-      <form role="form" method="POST" action="controller/logincontroller.php">
-        <div class="form-group">
-          <label for="inputUsernameEmail">Username or email</label>
-          <input type="text" class="form-control" name="username" placeholder="Admin">
-        </div>
-        <div class="form-group">
-          <a class="pull-right" href="#">Forgot password?</a>
-          <label for="inputPassword">Password</label>
-          <input type="password" class="form-control" name="password" placeholder="Admin">
-        </div>
-        <div class="checkbox pull-right">
-          <label>
-            <input type="checkbox">
-            Remember me </label>
-        </div>
-        <button type="submit" class="btn btn btn-primary">
-          Log In
-        </button>
-      </form>
+      <?php   include 'loginformmain.php';         ?>
+ 
     
     </div>
     

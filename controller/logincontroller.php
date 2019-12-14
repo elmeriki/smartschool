@@ -1,7 +1,7 @@
 <?php
   session_start();
-  include("../model/dbconfig.php");
-  include '../ui/boostrap.php'
+  include ("../model/dbconfig.php");
+  include ("../ui/boostrap.php");
 ?>
 
 <?php 
