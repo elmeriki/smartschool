@@ -1,7 +1,7 @@
 <?php
 include 'main_menu.php';
-
 ?>
+
   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <p class="page-header"> 
           The easiest solution to take your school to the next level My Smart School is the easiest and 
@@ -129,7 +129,7 @@ include 'main_menu.php';
 					</div>
 				</div>
 <?php
-$limit =3;  
+$limit =2;  
 if (isset($_GET["page"])) {
 	$page  = $_GET["page"]; 
 	} 

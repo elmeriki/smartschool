@@ -24,10 +24,10 @@
          //$_SESSION['myusername'];
          $_SESSION['login_user'] = $myusername;
   
- echo "<div class='alert alert-success text-center'>
+ echo "<div class='alert alert text-center'>
  <strong>Success Message!</strong> You have sucessfully login Please wait..........
 </div>";   
-echo "<center> <div class='spinner-border'></div></center>".header("refresh:5 ../ui/dashbaord.php");
+echo "<center> <div class='spinner-border'></div></center>".header("refresh:3 ../ui/dashbaord.php");
 
       }else{
 
