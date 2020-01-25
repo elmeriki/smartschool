@@ -7,7 +7,7 @@
   <script src="boostrap/jquery.js"></script>
   <script src="boostrap/popper.js"></script>
   <script src="boostrap/bootstrap.js"></script>
-  <link href="../../images/faviclogo.png" rel="shortcut icon" />
+  <link href="../images/faviclogo.png" rel="shortcut icon" />
 
 </head>
 <body>
